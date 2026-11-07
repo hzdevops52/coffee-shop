@@ -471,10 +471,6 @@ if (window.gsap && window.ScrollTrigger && !reduceMotion) {
     yPercent: 10, ease: 'none',
     scrollTrigger: { trigger: '.experience', start: 'top bottom', end: 'bottom top', scrub: 1 }
   });
-  gsap.from('.signature-card', {
-    y: 45, opacity: 0, stagger: 0.16, duration: 0.9, ease: 'power3.out',
-    scrollTrigger: { trigger: '.signature-grid', start: 'top 78%' }
-  });
 }
 
 // Magnetic movement on desktop only.
