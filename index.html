@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17110e">
+  <meta name="description" content="BREW & BARREL — Coffee • Bites • Little Joys. Discover the art of exceptional coffee and delightful little moments.">
+  <title>BREW & BARREL — Coffee • Bites • Little Joys</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-mark">B<span>&</span>B</div>
+    <div class="preloader-line"><span></span></div>
+    <p>PREPARING SOMETHING SPECIAL</p>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Brew and Barrel home">
+      <img src="assets/brew-barrel-logo.png" alt="BREW & BARREL — COFFEE • BITES • LITTLE JOYS" class="brand-logo">
+      <span class="logo-fallback" aria-hidden="true">BREW <i>&</i> BARREL<small>COFFEE • BITES • LITTLE JOYS</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#story" class="nav-link">Our Story</a>
+      <a href="#signature" class="nav-link">Signatures</a>
+      <a href="#menu" class="nav-link">Menu</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <a class="header-cta magnetic" href="#menu">ORDER NOW <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-inner">
+      <p class="eyebrow">TAKE A MOMENT</p>
+      <a href="#home">Home <span>01</span></a>
+      <a href="#story">Our Story <span>02</span></a>
+      <a href="#menu">Menu <span>03</span></a>
+      <a href="#experience">Experience <span>04</span></a>
+      <a href="#gallery">Gallery <span>05</span></a>
+      <a href="#contact">Contact <span>06</span></a>
+      <p class="mobile-tagline">COFFEE • BITES • LITTLE JOYS</p>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Warmly lit coffee bar with espresso"></div>
+      <div class="hero-vignette"></div>
+      <div class="hero-copy">
+        <p class="eyebrow hero-kicker"><span></span> A LITTLE MORE WONDER IN EVERY CUP</p>
+        <h1>More than coffee.<br><em>A moment to savour.</em></h1>
+        <p class="hero-description">Discover the art of exceptional coffee, delightful bites, and little moments that make every day special.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="button button-gold magnetic">EXPLORE OUR MENU <span>↗</span></a>
+          <a href="#story" class="text-link">DISCOVER OUR STORY <span>→</span></a>
+        </div>
+        <div class="hero-bottom-note"><span>01 / 06</span><span>MADE FOR THE MOMENT</span></div>
+      </div>
+      <div class="hero-object-wrap">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <canvas id="coffee-canvas" aria-label="Animated three-dimensional coffee cup"></canvas>
+        <div class="cup-caption"><span>THE DAILY RITUAL</span><i></i><span>EST. GOOD MOMENTS</span></div>
+      </div>
+      <div class="hero-side-note">SLOW DOWN. SIP WELL.</div>
+      <a href="#story" class="scroll-cue"><span>SCROLL TO EXPLORE</span><i></i></a>
+    </section>
+
+    <section class="intro section-pad" id="story">
+      <div class="section-index">01 <span>/ THE BEGINNING</span></div>
+      <div class="intro-grid">
+        <div class="intro-heading reveal">
+          <p class="eyebrow">A PLACE TO PAUSE</p>
+          <h2>Crafted with passion.<br><em>Served with purpose.</em></h2>
+        </div>
+        <div class="intro-copy reveal">
+          <p class="large-copy">Some moments deserve more than a quick cup. They deserve to be savoured.</p>
+          <p>At BREW & BARREL, every cup is an invitation to slow down. From the first rich aroma to the last little bite, we're here for the everyday rituals that make life feel a little more special.</p>
+          <a href="#experience" class="underlined-link">GET TO KNOW OUR CRAFT <span>↗</span></a>
+        </div>
+      </div>
+      <div class="intro-visual">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1800&q=85" alt="Warm, intimate coffee bar interior">
+        <div class="visual-stamp"><span>GOOD COFFEE</span><b>GOOD<br>COMPANY</b><span>ALWAYS</span></div>
+        <p class="image-caption">A thoughtful space for life's little pauses.</p>
+      </div>
+    </section>
+
+    <section class="signature section-pad" id="signature">
+      <div class="section-index">02 <span>/ THE SIGNATURES</span></div>
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">A FEW HOUSE FAVOURITES</p><h2>Made to be <em>remembered.</em></h2></div>
+        <p>Thoughtfully made. Beautifully balanced.<br>Always worth another sip.</p>
+      </div>
+      <div class="signature-grid">
+        <article class="signature-card sig-large reveal">
+          <div class="signature-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=1200&q=85" alt="Freshly made cappuccino"></div>
+          <div class="signature-meta"><span>01 — THE COMFORT CLASSIC</span><span>01</span></div>
+          <h3>Velvet Cappuccino</h3><p>Rich espresso, silky milk and a soft cloud of foam.</p>
+        </article>
+        <article class="signature-card sig-small reveal">
+          <div class="signature-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1000&q=85" alt="Iced coffee in a glass"></div>
+          <div class="signature-meta"><span>02 — THE COOL FAVOURITE</span><span>02</span></div>
+          <h3>Barrel Cold Brew</h3><p>Slow-steeped character, served refreshingly smooth.</p>
+        </article>
+        <article class="signature-card sig-small reveal">
+          <div class="signature-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=1000&q=85" alt="Latte art in a ceramic cup"></div>
+          <div class="signature-meta"><span>03 — THE LITTLE LUXURY</span><span>03</span></div>
+          <h3>Honey Oat Latte</h3><p>A mellow espresso blend with oat milk and honey notes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="menu-backdrop"></div>
+      <div class="section-index">03 <span>/ THE MENU</span></div>
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">FIND YOUR FAVOURITE</p><h2>A good day starts <em>here.</em></h2></div>
+        <p>From familiar comforts to new discoveries,<br>there's a little something for every mood.</p>
+      </div>
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" data-filter="all" role="tab" aria-selected="true">ALL</button>
+        <button class="menu-tab" data-filter="hot" role="tab" aria-selected="false">HOT COFFEE</button>
+        <button class="menu-tab" data-filter="iced" role="tab" aria-selected="false">ICED COFFEE</button>
+        <button class="menu-tab" data-filter="signature" role="tab" aria-selected="false">SIGNATURE</button>
+        <button class="menu-tab" data-filter="tea" role="tab" aria-selected="false">TEA & MORE</button>
+        <button class="menu-tab" data-filter="bites" role="tab" aria-selected="false">BITES</button>
+      </div>
+      <div class="menu-list" id="menu-list">
+        <article class="menu-item" data-category="hot"><div class="menu-item-no">01</div><div><h3>Espresso</h3><p>A concentrated shot with a beautifully bold finish.</p></div><span class="menu-price">PRICE TBC</span></article>
+        <article class="menu-item" data-category="hot"><div class="menu-item-no">02</div><div><h3>Flat White</h3><p>Double espresso softened with silky microfoam.</p></div><span class="menu-price">PRICE TBC</span></article>
+        <article class="menu-item" data-category="hot"><div class="menu-item-no">03</div><div><h3>Velvet Cappuccino</h3><p>Balanced espresso, steamed milk and airy foam.</p></div><span class="menu-price">PRICE TBC</span></article>
+        <article class="menu-item" data-category="iced"><div class="menu-item-no">04</div><div><h3>Classic Iced Latte</h3><p>Chilled espresso and milk over a glass of ice.</p></div><span class="menu-price">PRICE TBC</span></article>
+        <article class="menu-item" data-category="iced"><div class="menu-item-no">05</div><div><h3>Barrel Cold Brew</h3><p>Slow-steeped coffee, smooth from first sip to last.</p></div><span class="menu-price">PRICE TBC</span></article>
+        <article class="menu-item" data-category="signature"><div class="menu-item-no">06</div><div><h3>Honey Oat Latte</h3><p>Oat milk, espresso and a gentle honey sweetness.</p></div><span class="menu-price">PRICE TBC</span></article>
+        <article class="menu-item" data-category="signature"><div class="menu-item-no">07</div><div><h3>Mocha Moment</h3><p>Espresso meets smooth chocolate and steamed milk.</p></div><span class="menu-price">PRICE TBC</span></article>
+        <article class="menu-item" data-category="tea"><div class="menu-item-no">08</div><div><h3>Loose Leaf Tea</h3><p>A comforting, carefully steeped cup.</p></div><span class="menu-price">PRICE TBC</span></article>
+        <article class="menu-item" data-category="tea"><div class="menu-item-no">09</div><div><h3>Hot Chocolate</h3><p>Rich cocoa warmth for a slower moment.</p></div><span class="menu-price">PRICE TBC</span></article>
+        <article class="menu-item" data-category="bites"><div class="menu-item-no">10</div><div><h3>Butter Croissant</h3><p>Flaky layers, golden edges and a tender centre.</p></div><span class="menu-price">PRICE TBC</span></article>
+        <article class="menu-item" data-category="bites"><div class="menu-item-no">11</div><div><h3>Daily Sweet Treat</h3><p>A little something to make your coffee sweeter.</p></div><span class="menu-price">PRICE TBC</span></article>
+      </div>
+      <p class="menu-disclaimer">Menu items are illustrative placeholders. Confirm availability and pricing with the business before publishing.</p>
+    </section>
+
+    <section class="craft section-pad" id="craft">
+      <div class="section-index">04 <span>/ THE CRAFT</span></div>
+      <div class="craft-layout">
+        <div class="craft-copy reveal">
+          <p class="eyebrow">FROM BEAN TO YOUR MOMENT</p>
+          <h2>It's all in<br>the <em>little details.</em></h2>
+          <p>Great coffee is never just one thing. It's the aroma of freshly ground beans, the patience behind every extraction, and the care poured into every cup.</p>
+          <div class="craft-steps">
+            <div><span>01</span><p><b>THE AROMA</b><small>Freshly ground. Full of promise.</small></p></div>
+            <div><span>02</span><p><b>THE EXTRACTION</b><small>Balanced, thoughtful, unhurried.</small></p></div>
+            <div><span>03</span><p><b>THE POUR</b><small>A little craft in every cup.</small></p></div>
+          </div>
+        </div>
+        <div class="craft-visual reveal">
+          <div class="craft-image-main"><img loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1300&q=85" alt="Barista preparing coffee"></div>
+          <div class="craft-image-float"><img loading="lazy" src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=700&q=85" alt="Coffee beans ready for grinding"></div>
+          <span class="craft-roundel">MADE WITH<br>INTENTION</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section-pad" id="experience">
+      <div class="experience-image"></div>
+      <div class="experience-content reveal">
+        <p class="eyebrow">MORE THAN WHAT'S IN YOUR CUP</p>
+        <h2>Stay for the coffee.<br><em>Remember the feeling.</em></h2>
+        <p>A welcoming corner, a familiar face, a conversation that runs a little longer. BREW & BARREL is about making room for the moments in between.</p>
+        <a href="#contact" class="button button-outline magnetic">FIND YOUR MOMENT <span>↗</span></a>
+      </div>
+      <div class="experience-number">B&B <span>— THE EXPERIENCE</span></div>
+    </section>
+
+    <section class="gallery section-pad" id="gallery">
+      <div class="section-index">05 <span>/ THE GALLERY</span></div>
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">A FEW MOMENTS IN FRAME</p><h2>Take a closer <em>look.</em></h2></div>
+        <p>The details, the atmosphere, the little joys.<br>A glimpse into our world.</p>
+      </div>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-tall reveal" data-full="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1800&q=90" aria-label="View coffee cup photograph"><img loading="lazy" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=850&q=80" alt="Coffee in a ceramic cup"><span>01 / THE DAILY CUP</span></button>
+        <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=1800&q=90" aria-label="View latte art photograph"><img loading="lazy" src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=850&q=80" alt="Latte art"><span>02 / THE LITTLE DETAILS</span></button>
+        <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1800&q=90" aria-label="View coffee beans photograph"><img loading="lazy" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=850&q=80" alt="Fresh coffee beans"><span>03 / THE AROMA</span></button>
+        <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1800&q=90" aria-label="View cafe interior photograph"><img loading="lazy" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=850&q=80" alt="Cosy cafe interior"><span>04 / THE SPACE</span></button>
+        <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1800&q=90" aria-label="View coffee shop photograph"><img loading="lazy" src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=850&q=80" alt="Coffee shop atmosphere"><span>05 / GOOD COMPANY</span></button>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="section-index">06 <span>/ COME SAY HELLO</span></div>
+      <div class="contact-grid">
+        <div class="contact-heading reveal">
+          <p class="eyebrow">YOUR TABLE IS WAITING</p>
+          <h2>Let's make<br><em>it a moment.</em></h2>
+          <p>Have a question, want to visit, or simply say hello? We'd love to hear from you.</p>
+        </div>
+        <div class="contact-details reveal">
+          <div class="contact-row"><span>FIND US</span><p>Business address to be added</p></div>
+          <div class="contact-row"><span>OPENING HOURS</span><p>Opening hours to be confirmed</p></div>
+          <div class="contact-row"><span>CALL / WHATSAPP</span><p>Contact number to be added</p></div>
+          <div class="contact-row"><span>FOLLOW ALONG</span><p><a href="#" class="placeholder-link" aria-label="Instagram link placeholder">Instagram profile to be added ↗</a></p></div>
+          <a class="button button-gold contact-button" href="mailto:hello@example.com" data-placeholder-email>GET IN TOUCH <span>↗</span></a>
+          <p class="placeholder-note">Contact details and links are placeholders. Replace them with verified business information before launch.</p>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <div class="map-grid-lines"></div>
+        <div class="map-pin"><span>⌖</span></div>
+        <p>THE MAP WILL LEAD YOU HERE</p>
+        <small>Google Maps embed placeholder — add the verified business location.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <a class="footer-brand" href="#home">
+        <img src="assets/brew-barrel-logo.png" alt="BREW & BARREL logo" class="footer-logo">
+        <span class="logo-fallback">BREW <i>&</i> BARREL<small>COFFEE • BITES • LITTLE JOYS</small></span>
+      </a>
+      <p>Good coffee. Good company.<br><em>Little joys, every day.</em></p>
+      <a href="#top" class="back-top">BACK TO TOP ↑</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> BREW & BARREL. ALL RIGHTS RESERVED.</span>
+      <span>COFFEE • BITES • LITTLE JOYS</span>
+      <div><a href="#story">OUR STORY</a><a href="#menu">MENU</a><a href="#contact">CONTACT</a></div>
+    </div>
+  </footer>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image viewer">×</button>
+    <img src="" alt="">
+  </div>
+  <div class="scroll-progress"><span></span></div>
+  <script nomodule>document.body.classList.add('no-3d');</script>
+</body>
+</html>
